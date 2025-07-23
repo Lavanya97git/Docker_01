@@ -1,0 +1,8 @@
+FROM ubuntu:20.04
+LABEL author="LAVANYA"
+LABEL ORG="LAVSAI pvt ltd"
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y apache2 wget
+RUN wget "https://dckrbucket1.s3.ap-south-1.amazonaws.com/ChatGPT+Image+VPC%2CVPN%2CSubnet+Cntxn.png"
+EXPOSE 80
+CMD [ "apachectl", "-D", "FOREGROUND" ]

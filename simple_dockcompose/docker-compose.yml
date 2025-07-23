@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  mobiles:
+    image: nginx # image
+    ports:
+      - "6080:80"
+  kitchenthings:
+    image: postgres #postgres is also a type image used for SQL based image
+    environment:
+      POSTGRES_PASSWORD: dockercompose

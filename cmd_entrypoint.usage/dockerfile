@@ -1,0 +1,5 @@
+FROM ubuntu:18.04
+LABEL Org="Sai Organization"
+RUN apt-get update && apt-get install apache2 -y && rm -rf /var/lib/apt/lists/*
+CMD [ "echo", "I am CMD prompt, Hi to MahaMani" ]
+ENTRYPOINT [ "echo", "I am ENTRYPOINT prompt, Hi to GowriMahaLakshmi" ]

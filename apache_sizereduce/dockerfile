@@ -1,0 +1,16 @@
+# FROM ubuntu:18.04
+# LABEL author="Lavanya Team"
+# LABEL Org="LAVANYA PVT LTD"
+# RUN apt-get update
+# RUN apt-get install apache2 -y
+# VOLUME [ "/var/www/html" ]
+# CMD [ "apachectl", "-D", "FOREGROUND" ]
+##############################
+
+# TO REDUCE SIZE OF CACHE DATA REMOVING & AVOIDING MULTIPLE INSTRUCTIONS BELOW IS AMENDED A BIT
+FROM ubuntu:18.04
+LABEL author="Lavanya Team"
+LABEL Org="LAVANYA PVT LTD"
+RUN apt-get update && apt-get install apache2 -y && rm -rf /var/lib/apt/lists/*
+VOLUME [ "/var/www/html" ]
+CMD [ "apachectl", "-D", "FOREGROUND" ]

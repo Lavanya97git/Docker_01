@@ -16,7 +16,7 @@ Whether you're a DevOps beginner or looking to reinforce containerization skills
 | `multistage_expose`     | multiplestages with included expose. |
 | `simple_dockcompose`     | docker-compose.yml using multiple services. |
 | `springpetdckr.expose`     | docker wget to apply web application for image projection. |
-| `dockdock_pipactions`     | A .NET 8 web application containerized using Docker and deployed to an AWS EC2 VM. Includes GitHub Actions workflow for CI/CD. |
+| `dockdock_pipactions`     | A .NET 8 web application containerized using Docker and deployed to an AWS EC2 VM. Includes GitHub Actions workflow for CI/CD.(https://github.com/Lavanya97git/mslearn-tailspin-game-web_02.git)|
 
 > 💡 More projects coming soon...
 
